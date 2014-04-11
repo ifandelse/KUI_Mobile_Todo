@@ -5,10 +5,13 @@ define([
     
     var app = {
         init: function () {
-            this.instance = new kendo.mobile.Application(document.body, {
-                skin: 'flat',
-                initialView: 'todos'
-            });
+            var self = this;
+            require(['views/todos/todos'], function() {
+                self.instance = new kendo.mobile.Application(document.body, {
+                    skin: 'flat',
+                    initialView: 'todos'
+                });
+            });  
         },
         data : {
             categories: catDataSrc,
