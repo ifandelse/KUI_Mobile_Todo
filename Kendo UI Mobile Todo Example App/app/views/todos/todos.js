@@ -17,9 +17,6 @@ define([
         init: function (e) {
             navbar = e.view.header.find('.km-navbar').data('kendoMobileNavBar');
         },
-        show: function(e) {
-            this.loader.show();
-        },
         afterShow: function (e) {
             category = e.view.params.category || 'Work';
             model.todos.filter({
