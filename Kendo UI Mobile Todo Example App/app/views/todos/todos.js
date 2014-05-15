@@ -52,9 +52,9 @@ define([
                     model.todos.filter({
                         field: 'category',
                         operator: 'eq',
-                        value: category.id
+                        value: category.Id
                     });
-                    navbar.title(category.name);                
+                    navbar.title("** " + category.name + " ** ");                
                 });
             });    
         }

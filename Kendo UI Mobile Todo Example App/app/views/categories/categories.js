@@ -1,6 +1,6 @@
 define([
     'views/view',
-    'text!views/categories/categories.html',
+    'views/categories/categories_built',
     'app'
 ], function (View, html, app) {
 
